@@ -8,3 +8,11 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
+
+alias git_github_conf='git config user.name reAsOn2010 && git config user.email the.reason.sake@gmail.com'
+alias proxy_on='export http_proxy=socks5://127.0.0.1:1080 && export https_proxy=$http_proxy'
+alias proxy_off='unset http_proxy https_proxy'
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte.sh
+fi
